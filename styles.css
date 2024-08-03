@@ -1,0 +1,110 @@
+@font-face {
+  font-family: "0xProto";
+  src:
+    url("assets/fonts/0xProto-Regular.woff2") format("woff2"),
+    url("assets/fonts/0xProto-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  background-color: #000;
+  color: #00ff00;
+  font-family: "0xProto", monospace;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+#main-content {
+  text-align: center;
+}
+
+#ip-username {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+#output {
+  font-size: 16px;
+  white-space: pre-wrap;
+  text-align: left;
+  margin-bottom: 10px;
+}
+
+.command-result {
+  font-size: 12px;
+}
+
+#command-line {
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  white-space: nowrap;
+}
+
+#directory {
+  margin-right: 5px;
+}
+
+#prompt {
+  margin-right: 10px;
+}
+
+#input {
+  background: none;
+  border: none;
+  color: #00ff00;
+  outline: none;
+  font-family: "0xProto", monospace;
+  font-size: 16px;
+  width: 80%;
+  caret-color: transparent;
+}
+
+.blink {
+  animation: blink-animation 1s steps(5, start) infinite;
+}
+
+@keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
+}
+
+.history {
+  margin-bottom: 20px;
+}
+
+.command-result {
+  margin-top: 5px;
+}
+
+.social {
+  margin-bottom: 20px;
+}
+
+.link-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.link-list li {
+  margin: 0;
+  padding: 0;
+}
+
+.link-list a {
+  color: #00ff00;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.link-list a:hover {
+  text-decoration: underline;
+}
